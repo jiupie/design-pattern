@@ -11,6 +11,7 @@
     <modules>
         <module>chain-responsibility</module>
         <module>composite-pattern</module>
+        <module>state-pattern</module>
     </modules>
 
     <properties>
