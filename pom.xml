@@ -15,6 +15,7 @@
         <module>decorate-pattern</module>
         <module>strategy-pattern</module>
         <module>pipline-pattern</module>
+        <module>notify-subscriber</module>
     </modules>
 
     <properties>
