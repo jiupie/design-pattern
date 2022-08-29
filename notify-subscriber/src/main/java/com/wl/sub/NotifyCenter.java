@@ -1,7 +1,6 @@
 package com.wl.sub;
 
 import java.util.List;
-import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -21,7 +20,7 @@ public class NotifyCenter {
      */
     private static final EventPublisher DEFAULT_PUBLISH;
 
-    public static int ringBufferSize=16384;
+    public static int ringBufferSize = 16384;
 
 
     /**
@@ -110,7 +109,7 @@ public class NotifyCenter {
 
     private static void addSubscriber(Subscriber consumer, Class<? extends Event> subscribeType, EventPublisherFactory defaultPublishFactory) {
         EventPublisher eventPublisher = defaultPublishFactory.apply(subscribeType, ringBufferSize);
-        INSTANCE.publisherMap.put(subscribeType.getCanonicalName(),eventPublisher);
+        INSTANCE.publisherMap.put(subscribeType.getCanonicalName(), eventPublisher);
 
         eventPublisher.addSubscriber(consumer);
     }

@@ -63,9 +63,7 @@ public class DefaultPublisher extends Thread implements EventPublisher {
 
     @Override
     public void run() {
-
         try {
-
             for (; ; ) {
                 if (shutdown) {
                     break;
