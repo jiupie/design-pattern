@@ -2,6 +2,7 @@ package com.wl.sub;
 
 import com.wl.sub.event.EventDemo;
 import com.wl.sub.event.EventDemo1;
+import com.wl.sub.event.EventDemo2;
 import com.wl.sub.subscribe.SubscribeDemo;
 
 import java.util.concurrent.atomic.AtomicInteger;
@@ -25,6 +26,10 @@ public class PubDemo {
                     eventDemo1.setAge(i+ atomicInteger.get());
                     NotifyCenter.publishEvent(eventDemo);
                     NotifyCenter.publishEvent(eventDemo1);
+
+                    EventDemo2 eventDemo2 = new EventDemo2();
+                    eventDemo2.setAge(i);
+                    NotifyCenter.publishEvent(eventDemo2);
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();

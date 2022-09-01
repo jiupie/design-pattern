@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * @author 南顾北衫
  */
-public class SubscribeDemo extends Subscriber<EventDemo>{
+public class SubscribeDemo extends Subscriber<Event> {
     @Override
     public void onEvent(Event event) {
         System.out.println(event);
