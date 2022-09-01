@@ -17,6 +17,7 @@
         <module>pipline-pattern</module>
         <module>notify-subscriber</module>
         <module>proxy-pattern</module>
+        <module>builder-pattern</module>
     </modules>
 
     <properties>
